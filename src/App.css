@@ -1,0 +1,281 @@
+*{
+    line-height: 1.6;
+    font-size: 12px;
+}
+body {
+    margin: 0 auto;
+    background-color:rgb(102, 102, 102);
+    font-family: 'Roboto';
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 48px;
+    color:rgb(204, 204, 204);
+}
+
+.main-wrapper {
+    display: flex; 
+}
+
+.wrapper{
+    /* border: 2px solid black; */
+    width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(102, 102, 102);
+}
+
+.header {
+    background-color:rgb(38, 38, 38);
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(204, 204, 204);
+    overflow: hidden;
+    /* line-height: 10px; */
+}
+
+.header h1{
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.header hr {
+    width: 400px;
+    padding: 0;
+    margin: 0 auto;
+}
+.header p {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.searchBar {
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.searchBar input {
+    margin-bottom: 5px;
+    margin-right: 30px;
+    width: 300px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.searchBar button {
+    width: 150px;
+    height: 25px;
+    background-color: gray;
+    padding: 0;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.searchBar button:hover {
+    background-color: black;
+}
+
+/*------------------------ MOVIE CARD SECTION --------------------- */
+
+.movie-card {
+    background-color: rgb(166, 166, 166);
+    width: 800px;
+    display: flex;
+    justify-content: start;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+;
+    /* box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75); */
+    /* transition: transform 0.5s; */
+}
+
+/* -------------------MOVIE LIST-----------------*/
+
+.movie-list {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.movie-card{
+    transition: all 0.5s;
+}
+
+.movie-card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+.movie-card img {
+    padding-right: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform .3s; 
+}
+
+.movie-card img:hover {
+    transform: scale(1.1); 
+}
+
+.movie-title {
+    text-transform: uppercase;
+    font-size: 500;
+    text-align: center;
+}
+
+.movie-card p{
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.movie-card button{
+    width: 200px;
+    height: 25px;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.movie-card button:hover {
+    background-color: black;
+}
+
+#movie-overview {
+    font-size: 12px;
+}
+
+.extra-notes {
+    display: block;
+    justify-content: start;
+}
+.extra-notes p span {
+    font-weight: bold;
+}
+
+#play-icon {
+    /* width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    background: gray;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    color: white; */
+  
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    width: 30px;
+    height: 22px;
+    margin-left: 10px;   
+    text-align: center;      
+    transition: all .4s;
+}
+
+/* .play-icon-2 */
+
+#play-icon:hover {
+    color: red;
+    background-color: red;
+    color: white;
+}
+
+.card-button {
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+#viewed-button {
+        cursor: not-allowed;
+        pointer-events: none;
+        }
+/* ---------------------- MOVIE CARD SECTION END ---------------------- */
+
+/* --------------TRACKER PANEL--------------- */
+
+.watched-movies{
+    margin-top: 66px ;
+    margin-right: 30px;
+    font-size: 14px;
+    width: 230px;
+    padding: 0 0 15px 20px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    height: 100%;
+    position: sticky;
+    top: 5rem;
+    color: white;
+}
+
+.to-watch-title {
+    text-align: start;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.tracker-panel{
+    width: 300px;
+    height: auto;
+    padding: 0;
+    margin: 0;  
+}
+.tracker-panel hr {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.watched-list {
+    padding: 10px 0 5px 0;
+    margin: 0;
+    /* border: 2px solid black; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 80px;
+    width: 30px;
+}
+
+.delete-icon {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 51, 51);
+    margin: 0;
+    padding-left: 5px;
+}
+
+
+
